@@ -35,20 +35,22 @@ export default  function Navbar() {
             {/* for screen larger than md */}
             <div className="py-5 pt-8 hidden lg:flex justify-between text-lg font-medium text-grayText items-center">
                 <div>     
-                    <Link href={'/'} className=" text-2xl text-black flex gap-2 items-center font-extrabold">
-                        <Image src={'/LOGO4.jpg'} width={40} height={40} alt="logo" className=" rounded-lg"/>    
-                        <h1>ChatBloom</h1>
+                    <Link href={'/'} className=" text-2xl text-black flex gap-10 items-center font-extrabold">
+                        <h1>LiveTrendz</h1>
+                        <div className="InputContainer">
+                            <input placeholder="Search.." id="input" className="input" name="text" type="text" />
+                        </div>
                     </Link>     
                 </div>
-                <div className="flex lg:gap-20 xl:gap-36">
+                <div className="flex lg:gap-20 xl:gap-25">
                     <div className="flex items-center gap-10">
                         <Link href={'/'} className={`${pathname === '/' ? ' text-black' : ''}`}>Home</Link>
-                        <Link href={'/'}>Features</Link>
-                        <Link href={'/pricing'} className={`${pathname === '/pricing' ? ' text-black' : ''}`}>Pricing</Link>
+                        <Link href={'/shop'}>Shop</Link>
+                        <Link href={'/livestream'} className={`${pathname === '/pricing' ? ' text-black' : ''}`}>LiveStreams</Link>
                     </div> 
                     <div className="flex items-center gap-8">
-                        <Link href={'/'}>Login</Link>
-                        <Link href={'/'}><button className=" bg-black hover:bg-[#fff] hover:text-black border border-black transition-all duration-500 text-white py-3 px-7 rounded-full">Get Started</button></Link>
+                        <Link href={'/login'}>Login</Link>
+                        <Link href={'/register'} className=" bg-orange-300 py-2 px-4">Sign Up</Link>
                     </div>
                 </div>
             </div>
@@ -57,7 +59,7 @@ export default  function Navbar() {
             <div className="lg:hidden py-5 flex justify-between items-center">
                     <Link href={'/'} className="flex items-center gap-2 text-3xl font-extrabold">
                         <Image src={'/LOGO4.jpg'} width={30} height={30} alt="pic" />
-                        <h1>ChatBloom</h1>
+                        <h1>Livetrendx</h1>
                     </Link>
                 <div>
                     <Link href={'/'}><button className=" bg-black hover:bg-[#fff] hover:text-black border border-black transition-all duration-500 text-white py-3 px-7 rounded-full">Get Started</button></Link>
