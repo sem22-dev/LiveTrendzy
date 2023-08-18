@@ -31,26 +31,21 @@ export default  function Navbar() {
     },[showMenu])
 
     return (
-        <nav className={` z-50 px-5 sm:px-6 lg:px-12 xl:px-32 sticky top-0 bg-white`}>
+        <nav className={` z-50 px-5 sm:px-6 lg:px-12 sticky top-0 bg-white`}>
             {/* for screen larger than md */}
-            <div className="py-5 pt-8 hidden lg:flex justify-between text-lg font-medium text-grayText items-center">
+            <div className="py-5 pt-8 hidden lg:flex justify-between text-base  font-medium text-grayText items-center">
                 <div>     
                     <Link href={'/'} className=" text-2xl text-black flex gap-10 items-center font-extrabold">
                         <h1>LiveTrendz</h1>
-                        <div className="InputContainer">
-                            <input placeholder="Search.." id="input" className="input" name="text" type="text" />
-                        </div>
                     </Link>     
                 </div>
+                        <div className="InputContainer">
+                            <input placeholder="Start searching.." className="input" name="text" type="text" />
+                        </div>
                 <div className="flex lg:gap-20 xl:gap-25">
-                    <div className="flex items-center gap-10">
-                        <Link href={'/'} className={`${pathname === '/' ? ' text-black' : ''}`}>Home</Link>
-                        <Link href={'/shop'}>Shop</Link>
-                        <Link href={'/livestream'} className={`${pathname === '/pricing' ? ' text-black' : ''}`}>LiveStreams</Link>
-                    </div> 
-                    <div className="flex items-center gap-8">
-                        <Link href={'/login'}>Login</Link>
-                        <Link href={'/register'} className=" bg-orange-300 py-2 px-4">Sign Up</Link>
+                    <div className="flex items-center text-black gap-3">
+                        <Link href={'/login'} className="border rounded-lg border-black py-2 px-4">Login</Link>
+                        <Link href={'/register'} className="border border-transparent rounded-lg bg-[#FF9EAA] py-2 px-4">Sign Up</Link>
                     </div>
                 </div>
             </div>

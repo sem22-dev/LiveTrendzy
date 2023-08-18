@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function LiveStreamSection() {
     return (
-        <div className="px-5 sm:px-6 lg:px-12 xl:px-32 py-8">
+        <div className="px-5 sm:px-6 lg:px-12  py-8">
             <div className="flex justify-center items-center h-[500px] bg-black">
                 {/* Black box as a placeholder for the live stream video */}
                 <div className="w-[640px] h-[360px] bg-gray-800"></div>
