@@ -1,6 +1,6 @@
 "use client"
 import React, { useState } from "react";
-import { authenticateUser } from "/Users/yeiterilsosingkoireng/Desktop/LiveTrendzy/app/login/auth"; // Update the path to your auth.js file
+import { authenticateUser } from "./auth.js"; // Update the path to your auth.js file
 
 export default function Login() {
   const [email, setEmail] = useState("");
