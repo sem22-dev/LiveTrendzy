@@ -1,6 +1,6 @@
 "use client"
 import React, { useState } from 'react';
-import { submitToSupabase } from '/Users/yeiterilsosingkoireng/Downloads/trendzy/api/signup/create.js';
+import { submitToSupabase } from '/Users/yeiterilsosingkoireng/Desktop/trendzy/api/signup/create.js';
 import Link from 'next/link.js';
 
 export default function Pricing() {
